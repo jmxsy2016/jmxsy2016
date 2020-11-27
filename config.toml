@@ -1,0 +1,82 @@
+## Basic Configuration
+baseurl = "/"
+relativeurls = true
+languageCode = "en"
+title = "爱读书的李俊杰"
+defaultContentLanguage = "en"
+theme = "hugo-theme-dream"
+
+copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。'
+
+googleAnalytics = ""
+
+# disqusShortname = ""
+
+# enableRobotsTXT = true
+
+summarylength = 100
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+hasCJKLanguage = true 
+#paginate = 5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+ 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
+[params]
+  background = "white"
+  # backgroundImage = "/me/background.jpg"
+  linkColor = "seagreen"
+
+  author = "Li Junjie"
+  # description = ""
+  avatar = "/img/avatar.jpg"
+  motto = "记录生活，不忘追求"
+  # categoriesLimitInHeader = 6
+  # headerBottomText = ""
+  # dark mode
+
+  images = ["me/background.jpg"]
+  rss = true
+
+  # utterancesRepo = ""
+
+  # valine = true
+  # LEANCLOUD_APP_ID = ""
+  # LEANCLOUD_APP_KEY = ""
+  
+  email = "15537506324@163.com"
+  # twitter = ""
+  # facebook = ""
+  # instagram = ""
+  # mastodon = ""
+  # linkedin = ""
+  # github = ""
+  # stackoverflow = ""
+  # codepen = ""
+
+  siteStartYear = 2019
+
+  # favicon = "/favicon.ico"
+
+  highlightjs = true
+  highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
+  highlightjsExtraLanguages = ["ocaml"]
+  highlightjsTheme = "gruvbox-light"
+  highlightjsThemeDark = "gruvbox-dark"
+
+  # search
+  enableSearch = true
+
+  # options
+  showSummaryCoverInPost = true
+  # hasTwitterEmbed = true
+
+  # dark mode
+  darkLinkColor = "darkseagreen"
+  darkNav = true 
+  dark404 = true

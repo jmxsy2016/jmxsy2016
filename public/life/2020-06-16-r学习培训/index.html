@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>R语言学习培训 | 爱读书的李俊杰</title>
+
+    
+
+
+
+<meta name="author" content="Li Junjie" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.74.3" />
+
+<link rel="canonical" href="../../life/2020-06-16-r%E5%AD%A6%E4%B9%A0%E5%9F%B9%E8%AE%AD/" />
+
+
+<meta property="og:title" content="R语言学习培训" />
+<meta property="og:description" content="R语言学习已经很长时间了，痴迷于R的强大，尤其是数据分析，可视化和统计等领域，虽然是一款免费开源的软件，但是其功能不亚于其它付费软件。所以学习R相当于学习了数据科学、可视化、统计和写作等等，这也是我目" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/life/2020-06-16-r%E5%AD%A6%E4%B9%A0%E5%9F%B9%E8%AE%AD/" />
+<meta property="article:published_time" content="2020-06-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T00:00:00+00:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="R语言学习培训"/>
+<meta name="twitter:description" content="R语言学习已经很长时间了，痴迷于R的强大，尤其是数据分析，可视化和统计等领域，虽然是一款免费开源的软件，但是其功能不亚于其它付费软件。所以学习R相当于学习了数据科学、可视化、统计和写作等等，这也是我目"/>
+
+
+<link rel="stylesheet" href="../../css/semantic.min.css" />
+<link rel="stylesheet" href="../../css/icomoon.css" />
+<link rel="stylesheet" href="../../css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../../css/github-markdown.css" />
+<link rel="stylesheet" href="../../css/site.css" />
+
+<style>
+  a:hover {
+    text-decoration: underline; 
+  }
+
+  
+  a {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a,
+  .inverted a:hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: white;
+    
+
+    
+  }
+  
+
+  
+</style>
+
+    
+
+
+  
+    <link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/gruvbox-light.min.css" />
+  
+
+
+
+
+
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = '\/'"></i>
+  </div>
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">
+          R语言学习培训
+          <div class="sub header">
+            @
+            
+              
+                LJJ
+              
+            
+
+            | 
+                Tuesday, Jun 16, 2020
+              
+
+            | 2 minute read
+
+            | Update at
+              
+                Tuesday, Jun 16, 2020
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main">
+
+
+<p>R语言学习已经很长时间了，痴迷于R的强大，尤其是数据分析，可视化和统计等领域，虽然是一款免费开源的软件，但是其功能不亚于其它付费软件。所以学习R相当于学习了数据科学、可视化、统计和写作等等，这也是我目前学习的主要方向，作为使用过很多数据分析的软件，R绝对是最好用的，其它领域可能有更强大的编程软件，比如MATLAB的仿真和python的爬虫，甚至时间序列的eviews都是很好用的工具，但处理数据Excel和R配合好就足够了。</p>
+<p>后来萌生了教学的念头，毕竟之前有过一点点经验，所以三月开始准备R学习的课件和笔记，足足花了一个月时间，很吐槽现在很多老师不备课，讲着讲着就不知道下边怎么讲了，备课是理清思路的好机会和好方法。四月开始教学，发现人少还可以，人多了就尴尬了。白天很多时间都在上课，晚上是学习、思考和写作的好时间，所以晚上不讲课。当人数少的时候，一对一上课最好！可以随时解答，人多了，就不适合一对一，但是人多了也不好交流学习，毕竟每个人的学习进度不一样，但是人太多了，白天可能全在讲课，这样我就无法写新的东西，也无法学习和写作，所以在人数控制方面真是个大问题。考虑如此，我打算五人一小组，暑假7月1号（寒假再说）开始学习交流，主要内容包括：</p>
+<ul>
+<li>初级R</li>
+<li>tidyverse：数据处理</li>
+<li>R写作：R Markdown</li>
+<li>R可视化：ggplot系列</li>
+<li>统计相关知识</li>
+<li>学术和工作</li>
+<li>方法论知识：如何快速找到自己需要的东西</li>
+</ul>
+<p>其它内容可以见我写的<a href="https://jmxsy2016.github.io/Data-Science-and-Economics/R高级编程/code/PPT.html#1">PPT</a>
+可能也会将R与stata、python进行比较，以及如何运用Rstudio运行python代码。工具是为人服务的，用最适合自己的就行，精通一个，会用其它就可以，时间有限，不可能什么都学，根据自己的方向和专业选择，最终运用到自己的学习生活中。射雕三部曲之一的倚天屠龙记中张无忌学习太极的时候可能对学习有所启发，刚开始有招式（学习框架），最后融汇贯通，不拘泥于知识才是对的。
+（寒）暑假想学习的可以私聊我，这个计划应该会长久坚持下去！价格不会像高校讲课那么贵哈哈！</p>
+</article>
+    </section>
+
+    <footer class="ui attached segment dream-tags" data-html2canvas-ignore>
+      
+        
+          <a class="ui label" href="../../tags/r%E5%AD%A6%E4%B9%A0" title="R学习">R学习</a>
+        
+      
+      <div
+        class="ui label"
+        style="float: right; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>Save as image
+      </div>
+    </footer>
+
+    
+
+    
+    
+    
+
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
+    <article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      
+        <img src="../../img/avatar.jpg">
+      
+    </div>
+
+    
+    <h1 class="ui medium header">
+    
+      Li Junjie&#39;s blog
+      <div class="sub header" style="margin-top: 0.5rem;">记录生活，不忘追求</div>
+    
+    </h1>
+    
+
+    <div class="ui horizontal list">
+      
+      <a class="item" href="../../tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+      <a class="item" href="../../categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+    </div>
+  </section>
+
+  
+  <section class="ui attached center aligned segment dream-tags">
+    
+      
+      
+      <a class="ui label" href="../../tags/rstudio/" title="Rstudio">
+        Rstudio
+      </a>
+    
+      
+      
+      <a class="ui label" href="../../tags/r%E5%AD%A6%E4%B9%A0/" title="R学习">
+        R学习
+      </a>
+    
+      
+      
+      <a class="ui label" href="../../tags/%E5%8E%86%E5%8F%B2/" title="历史">
+        历史
+      </a>
+    
+      
+      
+      <a class="ui label" href="../../tags/%E5%AD%A6%E4%B9%A0/" title="学习">
+        学习
+      </a>
+    
+      
+      
+      <a class="ui label" href="../../tags/%E5%AD%A6%E6%9C%AF/" title="学术">
+        学术
+      </a>
+    
+      
+      
+      <a class="ui label" href="../../tags/%E7%94%9F%E6%B4%BB/" title="生活">
+        生活
+      </a>
+    
+  </section>
+  
+
+  
+  <section class="ui attached segment dream-categories">
+    <div class="ui accordion">
+      
+      
+      
+      
+      
+
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            
+            
+            <a class="item" href="../../categories/rstudio/" title="Rstudio">
+              Rstudio
+            </a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/%E5%AF%B9%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%9C%8B%E6%B3%95%E5%92%8C%E7%90%86%E8%A7%A3/">对编程软件学习的看法和理解</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/r%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E6%8A%80%E5%B7%A7/">R语言学习技巧</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            
+            
+            <a class="item" href="../../categories/r%E5%AD%A6%E4%B9%A0/" title="R学习">
+              R学习
+            </a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/%E6%88%91%E7%9A%84%E7%BC%96%E7%A8%8B%E7%90%86%E8%B4%A2%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB-%E4%B8%8D%E6%96%AD%E6%9B%B4%E6%96%B0/">我的编程理财课程体系（不断更新）</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/%E5%AF%B9%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%9C%8B%E6%B3%95%E5%92%8C%E7%90%86%E8%A7%A3/">对编程软件学习的看法和理解</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/r%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E6%8A%80%E5%B7%A7/">R语言学习技巧</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/%E6%94%B9%E5%8F%98rstudio%E7%9A%84help%E9%A1%B5%E9%9D%A2-%E5%8F%98%E5%BE%97%E6%9B%B4%E5%8A%A0%E5%A5%BD%E7%9C%8B/">改变Rstudio的help页面-变得更加好看</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/2020-06-16-r%E5%AD%A6%E4%B9%A0%E5%9F%B9%E8%AE%AD/">R语言学习培训</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            
+            
+            <a class="item" href="../../categories/%E5%85%AC%E5%BC%8F%E7%BC%96%E8%AF%91%E5%99%A8/" title="公式编译器">
+              公式编译器
+            </a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/2020-06-25-mathtype30%E5%A4%A9%E8%AF%95%E7%94%A8%E6%9C%9F%E8%BF%87%E5%90%8E%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">MathType30天试用期过后使用方法</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            
+            
+            <a class="item" href="../../categories/%E5%8E%86%E5%8F%B2/" title="历史">
+              历史
+            </a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/%E5%8E%86%E5%8F%B2%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/">读《中国通史》有感</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            
+            
+            <a class="item" href="../../categories/%E5%AD%A6%E4%B9%A0/" title="学习">
+              学习
+            </a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/%E7%8E%A9%E8%BD%AC%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">玩转指数基金读书笔记</a>
+                </div>
+              </div>
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/%E5%8E%86%E5%8F%B2%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/">读《中国通史》有感</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+        
+
+        
+          <div class="title">
+            <i class="dropdown icon"></i>
+            
+            
+            <a class="item" href="../../categories/%E5%AD%A6%E6%9C%AF/" title="学术">
+              学术
+            </a>
+          </div>
+          <div class="content">
+            <div class="ui list">
+            
+              <div class="item">
+                <div class="content">
+                  <a class="item" href="../../life/2020-06-25-mathtype30%E5%A4%A9%E8%AF%95%E7%94%A8%E6%9C%9F%E8%BF%87%E5%90%8E%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">MathType30天试用期过后使用方法</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        
+      
+        
+
+        
+      
+
+      
+        <div class="title">
+          <a class="item" href="../../categories" style="padding-left: 0.5rem;">......</a>
+        </div>
+      
+    </div>
+  </section>
+  
+
+  <section class="ui attached segment header-socials">
+    <nav class="ui secondary menu dream-menu dream-socials">
+  
+    <div class="item">
+      <a href="../../index.xml">
+        <i class=" rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:15537506324@163.com">
+        <i class=" mail icon" title="Email"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</nav>
+
+  </section>
+
+  <section class="ui bottom attached center aligned segment">
+    
+      <p>© 2019 - 2020 爱读书的李俊杰</p>
+    
+
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+
+    
+  </section>
+</article>
+
+  </div>
+</div>
+
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <div class="ui centered relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article>
+      <div class="ui top attached segment">
+        <h3 class="ui header">Social Links</h3>
+      </div>
+      <div class="ui bottom attached segment">
+        <nav class="ui secondary menu dream-menu dream-socials">
+  
+    <div class="item">
+      <a href="../../index.xml">
+        <i class="large rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:15537506324@163.com">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</nav>
+
+      </div>
+    </article>
+  </section>
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </section>
+
+  
+    
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.backgroundDark =  null 
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  null 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/semantic.min.js"></script>
+<script src="../../js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/theme.js"></script>
+
+    
+<script src="../../js/html2canvas.min.js"></script>
+<script src="../../js/post.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+  
+    
+      <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+     
+  
+
+  <script>
+  hljs.initHighlightingOnLoad()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    var lightTheme = "gruvbox-light"
+    var darkTheme = "gruvbox-dark"
+    var theme = isDark ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark ? '#333' : '')
+  }
+</script>
+
+
+
+
+
+    
+
+    
+  </body>
+</html>

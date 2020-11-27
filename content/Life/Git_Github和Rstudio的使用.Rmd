@@ -1,0 +1,65 @@
+---
+title: "Git_Github_和Rstudio"
+author: "LJJ"
+date: "2020-03-23"
+output: html_document
+cover: /img/Git_Github_和Rstudio.jpg
+images:
+  - /img/Git_Github_和Rstudio.jpg
+slug: Git_Github_和Rstudio
+categories: ["学习"]
+tags: ["学习"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,cache = TRUE)
+```
+
+终于将Git、GitHub和Rstudio打通了，作为一名笨鸟，还是经济学的一名菜鸟，学习这玩意着实花费了一些时间，不过还是很感谢谢益辉大神的blogdown，让自己能够用简单的傻瓜操作实现优秀的功能，今后自己将多写笔记，记录生活，利用好谢益辉开发的工具，太感谢了！！！
+
+将Git、Github和Rstudio结合后，自己主要注重于写作和思考，其它细枝末节每天不断学习即可，遇到不会的看博客就可以，自己毕竟还是以学术为主，工具还是次要的。
+
+周末自己摸索了下RStudio、Git、GitHub和netlify配合的方法，记录在案：
+
+## 1 安装R及RStudio
+
+## 2 安装Git
+
+## 3 GitHub网站申请免费账号
+
+## 4 netlify注册账号
+
+## 5 RStudio Git GitHub配置使用
+
+* 新建项目
+
+* 选择版本控制
+
+* 选择Git工具
+
+* 输入仓库地址和本地路径
+
+* 填写备注信息Commit
+
+* Commit成功
+
+* Push推送：就是把自己本地新增修改的代码发送到云端代码仓库里，方便协同人员获取最新代码
+
+* Push成功
+
+* Pull拉取：获取仓库中其他人员推送的最新代码到自己本地
+
+* Pull成功
+
+## 6 netlify搭建个人网站
+
+详情建议看谢益辉blogdown书籍，建议读两遍，比看博客能学到很多细节，有助于理解整个建立网站流程。
+
+
+
+
+
+
+
+
+
