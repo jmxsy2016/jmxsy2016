@@ -80,3 +80,8 @@ hasCJKLanguage = true
   darkLinkColor = "darkseagreen"
   darkNav = true 
   dark404 = true
+  
+[[menu.main]]
+    name = "Life"
+    weight = 1
+    url = "/Life/"
