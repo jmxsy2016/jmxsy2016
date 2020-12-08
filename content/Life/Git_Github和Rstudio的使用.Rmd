@@ -7,8 +7,10 @@ cover: /img/Git_Github_和Rstudio.jpg
 images:
   - /img/Git_Github_和Rstudio.jpg
 slug: Git_Github_和Rstudio
-categories: ["学习"]
-tags: ["学习"]
+categories:
+  - 学习
+tags:
+  - 学习
 ---
 
 ```{r setup, include=FALSE}

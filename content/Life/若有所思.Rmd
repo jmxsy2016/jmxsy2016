@@ -6,8 +6,10 @@ output: html_document
 cover: /img/若有所思.jpg
 images:
   - /img/若有所思.jpg
-categories: ["生活"]
-tags: ["生活"]
+categories:
+  - 生活
+tags:
+  - 生活
 ---
 
 ```{r setup, include=FALSE,echo=FALSE}
