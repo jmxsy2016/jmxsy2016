@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "/"
+baseurl = "https://jmxsy2016.netlify.com/"
 relativeurls = true
 languageCode = "en"
 title = "爱读书的李俊杰"
@@ -15,7 +15,7 @@ googleAnalytics = ""
 # enableRobotsTXT = true
 
 summarylength = 100
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$","\\.knit\\.md$", "\\.utf8\\.md$"]
 hasCJKLanguage = true 
 #paginate = 5
 
